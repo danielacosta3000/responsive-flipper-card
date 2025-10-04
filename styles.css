@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    box-sizing: border-box;
+    font-family: sans-serif;
+    --bg-color: color-mix(in srgb, #f62 70%, #fff);
+    --chat-bg-color: #fff;
+    --dark-color: #f62;
+    --text-color: #444;
+}
+
+body,div,ul,li,a,h1,h2,h3,h4,p {
+    margin: 0;
+    padding: 0;
+}
