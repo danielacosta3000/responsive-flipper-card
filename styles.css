@@ -7,7 +7,7 @@ body {
     box-sizing: border-box;
     font-family: sans-serif;
     --bg-color: color-mix(in srgb, #f62 70%, #fff);
-    --chat-bg-color: #fff;
+    --sidebar-color: #fff;
     --dark-color: #f62;
     --text-color: #444;
 }
@@ -16,3 +16,4 @@ body,div,ul,li,a,h1,h2,h3,h4,p {
     margin: 0;
     padding: 0;
 }
+
