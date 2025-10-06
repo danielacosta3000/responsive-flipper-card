@@ -73,6 +73,13 @@ body,div,ul,li,a,h1,h2,h3,h4,p {
 
 /* --- TITLES STYLES --- */
 
+.profession {
+    position: relative;
+    height: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .name {
     font-size: 1.5rem;
     margin: 6px 0;
@@ -94,6 +101,56 @@ body,div,ul,li,a,h1,h2,h3,h4,p {
     font-weight: 700;
 }
 
+/* --- PROFESSION ANIMATIONS --- */
+
+.profession__1 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: grow 4s both steps(18);
+    overflow: hidden;
+    position: absolute;
+}
+
+.profession__1::before {
+    content: '';
+    width: 1px;
+    height: 1rem;
+    background-color: var(--text-color);
+    position: absolute;
+    right: 0;
+    border-radius: 4px;
+    animation: titilar .36s infinite alternate;
+}
+
+/* --- TEXT ANIMATIONS --- */
+
+@keyframes grow {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 25%;
+    }
+    50% {
+        width: 55%;
+    }
+    75% {
+        width: 75%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes titilar {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
 
 /* --- SKILLS STYLES --- */
 
