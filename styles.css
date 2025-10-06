@@ -96,11 +96,30 @@ body,div,ul,li,a,h1,h2,h3,h4,p {
 
 /* --- PROFESSION ANIMATIONS --- */
 
+.profession__1 {
+    animation: fade-in 3.5s both;
+}
 
+.profession__2 {
+    animation: fade-in 4s both;
+}
 
-/* --- TEXT ANIMATIONS --- */
+.profession__3 {
+    animation: fade-in 4.5s both;
+}
 
-@keyframes grow {
+/* --- KEYFRAMES --- */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes bar-grow-1 {
     0% {
         width: 0%;
     }
@@ -109,6 +128,41 @@ body,div,ul,li,a,h1,h2,h3,h4,p {
     }
 }
 
+@keyframes bar-grow-2 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes bar-grow-3 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes bar-grow-4 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes bar-grow-5 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
 
 /* --- SKILLS STYLES --- */
 
@@ -144,4 +198,26 @@ body,div,ul,li,a,h1,h2,h3,h4,p {
 
 .skill__bar:nth-child(5) div {
     width: 50%;
+}
+
+/* ---SKILL BAR GROW */
+
+.skill__bar:last-child div {
+    animation: bar-grow-1 5s both;
+}
+
+.skill__bar:nth-child(2) div {
+    animation: bar-grow-2 5s both;
+}
+
+.skill__bar:nth-child(3) div {
+    animation: bar-grow-3 5s both;
+}
+
+.skill__bar:nth-child(4) div {
+    animation: bar-grow-4 5s both;
+}
+
+.skill__bar:nth-child(5) div {
+    animation: bar-grow-5 5s both;
 }
