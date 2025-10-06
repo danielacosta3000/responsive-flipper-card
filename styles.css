@@ -7,7 +7,7 @@ body {
     box-sizing: border-box;
     font-family: sans-serif;
     --bg-color: color-mix(in srgb, #f62 70%, #fff);
-    --sidebar-color: #fff;
+    --card-color: #fff;
     --dark-color: #f62;
     --text-color: #444;
 }
@@ -17,3 +17,8 @@ body,div,ul,li,a,h1,h2,h3,h4,p {
     padding: 0;
 }
 
+.card {
+    max-width: clamp(280px, 50%, 360px);
+    background-color: var(--card-color);
+    margin: 50px auto; 
+}
